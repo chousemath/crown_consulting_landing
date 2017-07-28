@@ -23,9 +23,9 @@ window.onload = function() {
     obscureMainBody();
   }, false);
 
-  iframe.addEventListener("mouseleave", function( event ) {
-    restoreMainBody();
-  }, false);
+  // iframe.addEventListener("mouseleave", function( event ) {
+  //   restoreMainBody();
+  // }, false);
 
   var widgetButtonClose = document.createElement('button');
   widgetButtonClose.style.height = '40px';
