@@ -20,13 +20,11 @@ window.onload = function() {
   var mainImage = document.getElementById('top');
 
   iframe.addEventListener("mouseenter", function( event ) {
-    document.body.style.position = "fixed";
-    mainImage.style.opacity = "0.3";
+    obscureMainBody();
   }, false);
 
   iframe.addEventListener("mouseleave", function( event ) {
-    document.body.style.position = "static";
-    mainImage.style.opacity = "1";
+    restoreMainBody();
   }, false);
 
   var widgetButtonClose = document.createElement('button');
@@ -55,17 +53,38 @@ window.onload = function() {
     } else {
       iframe.style.display = 'none';
     }
-    // widgetButton.style.display = 'block';
     iframe.style.display = 'none';
     widgetButtonClose.style.display = 'none';
+    restoreMainBody();
   });
 
   var reserveBtn = document.getElementById('make-reservation-button');
+  var sideNavBtn = document.getElementById('menu-toggle');
 
   reserveBtn.addEventListener("click", function(){
+    displayIframeClose();
+    obscureMainBody();
+  });
+
+  widgetButtonClose.addEventListener("mouseenter", function(){
+    displayIframeClose();
+    obscureMainBody();
+  });
+
+  function displayIframeClose() {
     iframe.style.display = 'block';
     widgetButtonClose.style.display = 'block';
+  }
+
+  function obscureMainBody() {
     document.body.style.position = "fixed";
     mainImage.style.opacity = "0.3";
-  });
+    sideNavBtn.style.display = "none";
+  }
+
+  function restoreMainBody() {
+    document.body.style.position = "static";
+    mainImage.style.opacity = "1";
+    sideNavBtn.style.display = "block";
+  }
 };
