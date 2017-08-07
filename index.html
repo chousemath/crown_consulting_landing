@@ -28,11 +28,14 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
 </head>
 
 <body>
-  <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top" style="background-color: transparent;">
+    <div id="header-backdrop" style="width: 100%; height: 95px; position: absolute; top: 0; background-color: #50BBC2; z-index: -1;"></div>
     <div style="width: 100%;">
       <div class="container" style="width: 80%; border-color: transparent; border-style: solid; border-width: 4px; border-bottom-color: #50BBC2;">
         <div class="navbar-header">
@@ -48,15 +51,41 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/" style="color: white;">HOME</a></li>
-            <li><a href="../navbar-static-top/" style="color: white;">MENU</a></li>
-            <li><a href="../navbar-static-top/" style="color: white;">MEMBERSHIP</a></li>
-            <li><a href="../navbar-static-top/" style="color: white;">CONTACT</a></li>
+            <li><a href="#about" style="color: white;">ABOUT US</a></li>
+            <li><a href="../navbar-static-top/" style="color: white;">HOSPITALS</a></li>
+            <li><a href="../navbar-static-top/" style="color: white;">SIGN UP</a></li>
+            <li><a href="#contact" style="color: white;">CONTACT US</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+
+  <script>
+    var range = 200;
+    $('#header-backdrop').css({ 'opacity': 0});
+
+    $(window).on('scroll', function () {
+
+      var scrollTop = $(this).scrollTop(),
+          height = $('#header-backdrop').outerHeight(),
+          offset = height / 2,
+          calc = 1 - (scrollTop - offset + range) / range;
+
+      console.log(calc);
+
+      $('#header-backdrop').css({ 'opacity': calc });
+
+      if (calc <= '-0.4') {
+        $('#header-backdrop').css({ 'opacity': 0.4 });
+      } else if (calc >= '0') {
+        $('#header-backdrop').css({ 'opacity': 0 });
+      } else {
+        $('#header-backdrop').css({ 'opacity': -1 * calc });
+      }
+
+    });
+  </script>
 
   <div class="footer-container-main">
     <div class="container">
@@ -70,7 +99,7 @@
         <div class="col-lg-6">
           <div class="footer-container" id="make-reservation-button">
             <img src="img/search-white.png" class="footer-icon">
-            MAKE A RESERVATION NOW 예약병원찾기
+            <span id="make-reservation-text">MAKE A RESERVATION NOW 예약병원찾기</span>
           </div>
         </div>
       </div>
@@ -216,125 +245,7 @@
     </div>
   </section>
 
-  <section id="services" class="services bg-primary">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-10 col-lg-offset-1">
-          <h2>재단소개</h2>
-          <hr class="small">
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="service-item">
-                <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-adjust fa-stack-1x text-primary"></i>
-              </span>
-                <p class="foundation-explanation-text">미국 내 한인교포는 약 220만명으로 매년 18만명 정도가 한국을 방문해 의료서비스를 이용하고 있지만 해외동포 또는 외국인이라는 이유로 의료이용에 어려움을 겪는 분들이 많습니다.</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="service-item">
-                <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-              </span>
-                <p class="foundation-explanation-text">미국 현지의 의료비가 고가인 이유로 한국에서 의료를 이용하지만 대형병원의 긴 대기시간, 부가서비스 의무사용, 고가의 진료비용 등 불편함을 호소하고 있습니다.</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="service-item">
-                <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-bell fa-stack-1x text-primary"></i>
-              </span>
-                <p class="foundation-explanation-text">재단은 미국에 있는 우리 동포들이 저렴한 비용에 한국의 우수한 의료서비스를 이용할 수 있도록 지원하는 역할을 충실히 수행할 것입니다.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id="about" class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>사업내용</h2>
-          <p class="lead">의료이용도가 높은 6대 진료과목에 대해 서울대학교 출신 의료진이 운영하는 검증된 병원들과 협약을 맺고 있습니다. 재단회원에 대해 특별우대 가격에 서비스를 제공해 드리고 있습니다.안과, 정형외과, 치과, 성형외과, 피부과, 건강검진.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <aside class="callout">
-    <div class="text-vertical-center">
-      <h1>사업내용</h1>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <p class="foundation-explanation-text">의료이용도가 높은 6대 진료과목에 대해 서울대학교 출신 의료진이 운영하는 검증된 병원들과 협약을 맺고 있습니다. 재단회원에 대해 특별우대 가격에 서비스를 제공해 드리고 있습니다.안과, 정형외과, 치과, 성형외과, 피부과, 건강검진.</p>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-    </div>
-  </aside>
-
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center">
-          <h2>협력병원</h2>
-          <hr class="small">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <div class="hospital-image-container">
-                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                    <h2 class="hospital-image-text"><span>서울신세계안과 (안과)</span></h2>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <div class="hospital-image-container">
-                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                    <h2 class="hospital-image-text"><span>서울척병원 (정형외과)</span></h2>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <div class="hospital-image-container">
-                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                    <h2 class="hospital-image-text"><span>넥스덴치과 (치과)</span></h2>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="portfolio-item">
-                <a href="#">
-                  <div class="hospital-image-container">
-                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                    <h2 class="hospital-image-text"><span>서초법원치과 (치과)</span></h2>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Map -->
-  <section id="contact" class="map">
+  <section id="map" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
     <br />
     <small>
@@ -405,9 +316,6 @@
 
   <script async src="js/docandme-iframe.js"></script>
 
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
-
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
 
@@ -431,7 +339,7 @@
               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
               if (target.length) {
                   $('html,body').animate({
-                      scrollTop: target.offset().top
+                      scrollTop: target.offset().top - 75
                   }, 1000);
                   return false;
               }

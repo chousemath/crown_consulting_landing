@@ -1,5 +1,5 @@
 window.onload = function() {
-
+  var reservationBtnTxt = document.getElementById('make-reservation-text');
   var iframe = document.createElement('iframe');
   iframe.id = 'docandme-widget';
   var w = window.innerWidth;
@@ -18,6 +18,7 @@ window.onload = function() {
   iframe.style.display = 'none';
   iframe.src = "https://www.docandme.com";
   iframe.style.zIndex = 9999;
+  iframe.style.border = 0;
 
   var mainImage = document.getElementById('top');
 
@@ -50,6 +51,7 @@ window.onload = function() {
     }
     iframe.style.display = 'none';
     widgetButtonClose.style.display = 'none';
+    reservationBtnTxt.style.display = 'block';
   });
 
   var reserveBtn = document.getElementById('make-reservation-button');
@@ -57,10 +59,12 @@ window.onload = function() {
 
   reserveBtn.addEventListener("click", function(){
     displayIframeClose();
+    reservationBtnTxt.style.display = 'none';
   });
 
   widgetButtonClose.addEventListener("mouseenter", function(){
     displayIframeClose();
+    reservationBtnTxt.style.display = 'none';
   });
 
   function displayIframeClose() {
