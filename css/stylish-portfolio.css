@@ -109,6 +109,31 @@ body {
   color: white;
 }
 
+.flex-container {
+  width: 100%;
+  display: flex;
+}
+
+.first-name-container {
+  flex-grow: 1;
+  padding-right: 2px;
+}
+
+.last-name-container {
+  flex-grow: 1;
+  padding-left: 2px;
+}
+
+.day-month-container {
+  flex-grow: 1;
+  padding-right: 4px;
+}
+
+.year-container {
+  flex-grow: 1;
+  padding-left: 4px;
+}
+
 .light-blue-text {
   color: #caf0fb;
 }
@@ -127,6 +152,10 @@ body {
 
 .navbar-default {
   border-color: transparent;
+}
+
+.transparent-font {
+  color: transparent;
 }
 
 .gray-background {
