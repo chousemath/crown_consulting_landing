@@ -352,7 +352,48 @@ hr.small {
     margin-bottom: 30px;
 }
 
+/*CONTACT FORM*/
+
+.contact-header {
+  font-size: 33px;
+}
+
+.contact-text {
+  font-size: 18px;
+}
+
+.contact-thin {
+  font-weight: lighter;
+}
+
+.contact-header-name {
+  font-weight: bold;
+}
+
+.contact-address {
+  margin: 45px 0;
+}
+
 /* Callout */
+
+.resize-input-box {
+  height: 70px;
+}
+
+.blue-divider {
+  height: 4px;
+  background-color: #50BBC2;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dark-seoul-background {
+    background: url(../img/dark-seoul-1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 .callout {
     display: table;
