@@ -8,24 +8,18 @@ window.onload = function() {
     iframe.style.height = h + 'px';
     iframe.style.width = w + 'px';
   } else {
-    iframe.style.height = '731px';
-    iframe.style.width = '450px';
+    iframe.style.height = h + 'px';
+    iframe.style.minWidth = '450px';
+    iframe.style.maxWidth = h * 0.7 + 'px';
   }
   iframe.style.position = 'fixed';
   iframe.style.bottom = '0';
   iframe.style.right = '0';
   iframe.style.display = 'none';
   iframe.src = "https://www.docandme.com";
+  iframe.style.zIndex = 9999;
 
   var mainImage = document.getElementById('top');
-
-  iframe.addEventListener("mouseenter", function( event ) {
-    obscureMainBody();
-  }, false);
-
-  // iframe.addEventListener("mouseleave", function( event ) {
-  //   restoreMainBody();
-  // }, false);
 
   var widgetButtonClose = document.createElement('button');
   widgetButtonClose.style.height = '40px';
@@ -43,6 +37,7 @@ window.onload = function() {
   widgetButtonClose.style.display = 'none';
   widgetButtonClose.id = 'docandme-widget-button-close';
   widgetButtonClose.innerText = "Close";
+  widgetButtonClose.style.zIndex = 99999;
 
   document.body.appendChild(iframe);
   document.body.appendChild(widgetButtonClose);
@@ -55,7 +50,6 @@ window.onload = function() {
     }
     iframe.style.display = 'none';
     widgetButtonClose.style.display = 'none';
-    restoreMainBody();
   });
 
   var reserveBtn = document.getElementById('make-reservation-button');
@@ -63,12 +57,10 @@ window.onload = function() {
 
   reserveBtn.addEventListener("click", function(){
     displayIframeClose();
-    obscureMainBody();
   });
 
   widgetButtonClose.addEventListener("mouseenter", function(){
     displayIframeClose();
-    obscureMainBody();
   });
 
   function displayIframeClose() {
