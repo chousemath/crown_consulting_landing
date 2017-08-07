@@ -61,6 +61,10 @@ body {
   color: white;
 }
 
+.white-font {
+  color: white;
+}
+
 .footer-container-main {
   width: 100%;
   height: 70px;
@@ -90,6 +94,21 @@ body {
   color: #50BBC2 !important;
 }
 
+.docandme-blue-background {
+  background-color: #50BBC2;
+}
+
+.signup-button {
+  font-size: 23px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.signup-input-label {
+  text-align: left;
+  color: white;
+}
+
 .light-blue-text {
   color: #caf0fb;
 }
@@ -112,6 +131,17 @@ body {
 
 .gray-background {
   background-color: #E6E6E6;
+}
+
+.gray-background-dark {
+  background-color: #808080;
+}
+
+.description-text {
+  margin-top: 35px;
+  text-align: left;
+  font-size: 23px;
+  line-height: 200%;
 }
 
 /* Custom Button Styles */
