@@ -396,12 +396,17 @@ hr.small {
 .seoul-shinsegae-image {
     width: 100%;
     height: 300px;
-    background: url(../img/seoul-shinsegae-1.png) no-repeat center center scroll;
+    background: url(../img/seoul-shinsegae-2.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     margin-top: 50px;
+}
+
+.hospital-icon-styling {
+  width: 55px;
+  padding-bottom: 10px;
 }
 
 .overlay-text {
@@ -648,7 +653,7 @@ span.round-tabs{
     line-height: 70px;
     display: inline-block;
     border-radius: 100px;
-    background: white;
+    background: #808080;
     z-index: 2;
     position: absolute;
     left: 0;
@@ -657,61 +662,83 @@ span.round-tabs{
 }
 
 span.round-tabs.one{
-    color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 li.active span.round-tabs.one{
-    background: #fff !important;
-    border: 2px solid #ddd;
-    color: rgb(34, 194, 34);
+    background: #50BBC2 !important;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 span.round-tabs.two{
-    color: #febe29;border: 2px solid #febe29;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 li.active span.round-tabs.two{
-    background: #fff !important;
-    border: 2px solid #ddd;
-    color: #febe29;
+    background: #50BBC2 !important;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 span.round-tabs.three{
-    color: #3e5e9a;border: 2px solid #3e5e9a;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 li.active span.round-tabs.three{
-    background: #fff !important;
-    border: 2px solid #ddd;
-    color: #3e5e9a;
+    background: #50BBC2 !important;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 span.round-tabs.four{
-    color: #f1685e;border: 2px solid #f1685e;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 li.active span.round-tabs.four{
-    background: #fff !important;
-    border: 2px solid #ddd;
-    color: #f1685e;
+    background: #50BBC2 !important;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 span.round-tabs.five{
-    color: #999;border: 2px solid #999;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 li.active span.round-tabs.five{
-    background: #fff !important;
-    border: 2px solid #ddd;
-    color: #999;
+    background: #50BBC2 !important;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 .nav-tabs > li.active > a span.round-tabs{
     background: #fafafa;
 }
 .nav-tabs > li {
-    width: 20%;
+    width: 16.5%;
 }
+
+.board-container {
+  width: 100%;
+  padding: 0;
+}
+
+.carousel-text {
+  display: inline-block;
+  padding: 10px;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*li.active:before {
     content: " ";
     position: absolute;
