@@ -123,6 +123,23 @@ body {
   font-size: 23px;
 }
 
+.hospital-logo-image {
+  width: 75px;
+}
+
+.pricing-label {
+  text-align: left; margin-top: 75px;
+}
+
+.hospital-logo-container {
+  flex-grow: 1;
+  padding-top: 26px;
+}
+
+.hospital-name-container {
+  flex-grow: 8;
+}
+
 .pricing-left-container {
   flex-grow: 1;
   padding-right: 10px;
