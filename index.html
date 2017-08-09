@@ -2,35 +2,27 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Medical Assistance for Korean Americans</title>
-
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
-
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
-
 </head>
 
 <body>
@@ -61,32 +53,6 @@
     </div>
   </nav>
 
-  <script>
-    var range = 200;
-    $('#header-backdrop').css({ 'opacity': 0});
-
-    $(window).on('scroll', function () {
-
-      var scrollTop = $(this).scrollTop(),
-          height = $('#header-backdrop').outerHeight(),
-          offset = height / 2,
-          calc = 1 - (scrollTop - offset + range) / range;
-
-      console.log(calc);
-
-      $('#header-backdrop').css({ 'opacity': calc });
-
-      if (calc <= '-0.4') {
-        $('#header-backdrop').css({ 'opacity': 0.4 });
-      } else if (calc >= '0') {
-        $('#header-backdrop').css({ 'opacity': 0 });
-      } else {
-        $('#header-backdrop').css({ 'opacity': -1 * calc });
-      }
-
-    });
-  </script>
-
   <div class="footer-container-main">
     <div class="container">
       <div class="row">
@@ -110,29 +76,13 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <!-- <header id="top" class="header">
-    <div class="text-vertical-center">
-      <div style="background-color: black; opacity: 0.5; height: 100%; top: 0; left: 0; position: relative;"></div>
-      <div class="overlay-text">
-        <div style="width: 50%; margin: 0 auto; text-align: left; padding-left: 25px; border-color: transparent; border-style: solid; border-width: 25px; border-left-color: #ffffff;">
-          <div style="width: 100%;"><b>미주한인</b>의료지원재단</div>
-          <div style="width: 100%; margin-top: -35px;"><span class="overlay-subtext">Medical Assistance Foundation for Korean-Americans</span></div>
-        </div>
-      </div>
-    </div>
-  </header> -->
-
-
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
-   <!-- Indicators -->
    <ol class="carousel-indicators" style="margin-bottom: 80px;">
       <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
       <li data-target="#mycarousel" data-slide-to="1"></li>
       <li data-target="#mycarousel" data-slide-to="2"></li>
       <li data-target="#mycarousel" data-slide-to="3"></li>
    </ol>
-   <!-- Wrapper for slides -->
    <div class="carousel-inner" role="listbox">
       <div class="item">
          <img src="img/carousel-1.jpg" data-color="lightblue" alt="First Image">
@@ -140,36 +90,35 @@
          <div class="overlay-text">
            <div class="main-slide-container">
              <div class="customfont" style="width: 100%;"><b>미주한인</b>의료지원재단</div>
-             <div style="width: 100%; margin-top: -35px;"><span class="overlay-subtext customfont">Medical Assistance Foundation for Korean-Americans</span></div>
+             <div style="width: 100%; line-height: 55%;"><span class="overlay-subtext customfont">Medical Assistance Foundation for Korean-Americans</span></div>
            </div>
          </div>
       </div>
       <div class="item">
-         <img src="img/carousel-2.jpg" data-color="firebrick" alt="Second Image">
-         <div class="super-slide-container"></div>
-         <div class="overlay-text-2">
-           <div class="super-slide-container-2">
-             <div class="main-slide-container-2">
-               <span class="white-font">
-                 <span class="customfont" style="font-size: 35px;"><b>미주한인</b>의료지원재단<br/></span>
-                 <span class="customfont" style="font-size: 20px; font-weight: lighter;">Medical Assistance Foundation for Korean-Americans</span>
-               </span>
-             </div>
-           </div>
-         </div>
+        <img src="img/carousel-2.jpg" data-color="firebrick" alt="Second Image">
+        <div class="super-slide-container"></div>
+        <div class="overlay-text-2">
+          <div class="super-slide-container-2">
+            <div class="main-slide-container-2">
+              <span class="white-font">
+                <span class="customfont" style="font-size: 35px;"><b>미주한인</b>의료지원재단<br/></span>
+                <span class="customfont" style="font-size: 20px; font-weight: lighter;">Medical Assistance Foundation for Korean-Americans</span>
+              </span>
+            </div>
+          </div>
+        </div>
 
-         <div class="overlay-text">
-           <div class="super-slide-container-3">
-             <div class="main-slide-container-3">
-               <div class="white-font main-slide-description-2 customfont">
-                 해마다 18만 명의 재미동포가 고국 방문길에 병원을 찾지만<br/>
-                 외국인이라는 이유로 겪는 차별이나 불편함이 많았습니다.
-               </div>
+       <div class="overlay-text">
+         <div class="super-slide-container-3">
+           <div class="main-slide-container-3">
+             <div class="white-font main-slide-description-2 customfont">
+               해마다 18만 명의 재미동포가 고국 방문길에 병원을 찾지만<br/>
+               외국인이라는 이유로 겪는 차별이나 불편함이 많았습니다.
              </div>
            </div>
          </div>
+       </div>
       </div>
-
 
       <div class="item">
         <img src="img/carousel-3.jpg" data-color="firebrick" alt="Second Image">
@@ -196,7 +145,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="item">
         <img src="img/carousel-4.jpg" data-color="firebrick" alt="Second Image">
@@ -225,36 +173,6 @@
       </div>
    </div>
 </div>
-
-<script>
-  var $item = $('.carousel .item');
-  var $wHeight = $(window).height();
-  $item.eq(0).addClass('active');
-  $item.height($wHeight);
-  $item.addClass('full-screen');
-
-  $('.carousel img').each(function() {
-    var $src = $(this).attr('src');
-    var $color = $(this).attr('data-color');
-    $(this).parent().css({
-      'background-image' : 'url(' + $src + ')',
-      'background-color' : $color
-    });
-    $(this).remove();
-  });
-
-  $(window).on('resize', function (){
-    $wHeight = $(window).height();
-    $item.height($wHeight);
-  });
-
-  $('.carousel').carousel({
-    interval: 6000,
-    pause: "false"
-  });
-</script>
-
-
   <section id="about" class="about gray-background">
     <div class="container">
       <div class="row">
@@ -277,7 +195,6 @@
       </div>
     </div>
   </section>
-
   <aside class="callout-2">
     <div class="text-vertical-center">
       <p class="quote-text customfont">"고국을 향한 발걸음에 건강을 더하겠습니다."</p>
@@ -345,27 +262,6 @@
               </div>
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="home">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                   <div class="flex-container pricing-container">
                     <div class="hospital-logo-container">
                       <img src="img/seoul-shinsegae-logo.png" class="hospital-logo-image"/>
@@ -380,14 +276,6 @@
                   <p class="lead description-text customfont">
                     서울신세계안과는 국내외 학술지에 발표한 논문들을 통해 라식, 백내장, 황반변성 등에 있어 이미 높은 수준을 인정받은 서울대, 서울아산병원 교수 출신 4인의 원장들이 각 분야별 전문진료를 제공합니다. 서울신세계안과의 모든 수술・진단 장비는 서울대학교, 서울아산병원 등 국내 최고의 병원과 동등한 수준의 장비입니다. 믿고 찾아주신 환자분들게 최고의 의료서비스를 약속 드립니다.
                   </p>
-
-                  <!-- <div style="padding: 10px 50px; background-color: #606C74;">
-                    <p class="lead description-text">
-                      “한국에서 어느 병원을 선택 할 지 몰라서 힘들었는데. 재단에서 추천하는 병원에서 라식을 결정하기 까지 자세한 설명과 편리한 스텝들로 이번 여름 수술을 잘 마무리 하였습니다. ”
-                      <br/>
-                      - 제니퍼 안 (LA 거주)
-                    </p>
-                  </div> -->
 
                   <div class="flex-container pricing-container">
                     <div class="doctor-photo-container">
@@ -466,7 +354,6 @@
                     </div>
                   </div>
 
-
                   <h1 class="pricing-label customfont">PRICING</h1>
                   <div style="height: 4px; width: 100%;">
                     <div class="blue-divider"></div>
@@ -503,8 +390,6 @@
                     </div>
                   </div>
 
-
-
                   <div class="video-title customfont">
                     병원 비디오 투어
                   </div>
@@ -521,71 +406,50 @@
                   <p class="text-center">
                     <a href="" class="btn btn-success btn-outline-rounded green"> create your profile <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
                   </p>
-
-                                </div>
-                                <div class="tab-pane fade" id="messages">
-                                    <h3 class="head text-center">Bootsnipp goodies</h3>
-                                    <p class="narrow text-center">
-                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                                    </p>
-
-                                    <p class="text-center">
-                              <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                          </p>
-                                </div>
-                                <div class="tab-pane fade" id="settings">
-                                    <h3 class="head text-center">Drop comments!</h3>
-                                    <p class="narrow text-center">
-                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                                    </p>
-
-                                    <p class="text-center">
-                              <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                          </p>
-                                </div>
-                                <div class="tab-pane fade" id="doner">
-            <div class="text-center">
-              <i class="img-intro icon-checkmark-circle"></i>
+                </div>
+              <div class="tab-pane fade" id="messages">
+                <h3 class="head text-center">Bootsnipp goodies</h3>
+                <p class="narrow text-center">
+                    Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                </p>
+                <p class="text-center">
+                  <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+              </div>
+              <div class="tab-pane fade" id="settings">
+                <h3 class="head text-center">Drop comments!</h3>
+                <p class="narrow text-center">
+                    Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                </p>
+                <p class="text-center">
+                  <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+              </div>
+              <div class="tab-pane fade" id="doner">
+                <div class="text-center">
+                  <i class="img-intro icon-checkmark-circle"></i>
+                </div>
+                <h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
+                <p class="narrow text-center">
+                  Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="checkup">
+                <h3 class="head text-center">Create a Bootsnipp<sup>™</sup> Profile</h3>
+                <p class="narrow text-center">
+                  Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                </p>
+                <p class="text-center">
+                  <a href="" class="btn btn-success btn-outline-rounded green"> create your profile <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
           </div>
-          <h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
-          <p class="narrow text-center">
-            Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-          </p>
-          </div>
-          <div class="tab-pane fade" id="checkup">
-            <h3 class="head text-center">Create a Bootsnipp<sup>™</sup> Profile</h3>
-            <p class="narrow text-center">
-                Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-            </p>
-            <p class="text-center">
-              <a href="" class="btn btn-success btn-outline-rounded green"> create your profile <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-            </p>
-
-                          </div>
-          <div class="clearfix"></div>
-          </div>
-
-          </div>
-          </div>
-
-                             <script>
-                             $(function(){
-$('a[title]').tooltip();
-});
-
-                             </script>
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+         <script>
+           $(function(){$('a[title]').tooltip();});
+         </script>
         </div>
         <div class="col-lg-1"></div>
       </div>
@@ -705,7 +569,7 @@ $('a[title]').tooltip();
             <div class="blue-divider"></div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 contact-container">
               <form>
                 <div class="flex-container">
                   <div class="first-name-container">
@@ -732,8 +596,7 @@ $('a[title]').tooltip();
                 <button type="submit" class="btn docandme-blue-background white-font signup-button">Submit</button>
               </form>
             </div>
-            <div class="col-md-6">
-
+            <div class="col-md-6 contact-container">
               <div class="flex-container">
                 <div class="first-name-container white-font" style="text-align: left; padding-left: 35px;">
                   <img src="img/mkfk_logo.png" style="height: 65px; margin-bottom: 25px;">
@@ -833,6 +696,54 @@ $('a[title]').tooltip();
       }
       // Enable map zooming with mouse scroll when the user clicks the map
   $('.map').on('click', onMapClickHandler);
+  </script>
+
+  <script>
+    var $item = $('.carousel .item');
+    var $wHeight = $(window).height();
+    $item.eq(0).addClass('active');
+    $item.height($wHeight);
+    $item.addClass('full-screen');
+
+    $('.carousel img').each(function() {
+      var $src = $(this).attr('src');
+      var $color = $(this).attr('data-color');
+      $(this).parent().css({
+        'background-image' : 'url(' + $src + ')',
+        'background-color' : $color
+      });
+      $(this).remove();
+    });
+
+    $(window).on('resize', function (){
+      $wHeight = $(window).height();
+      $item.height($wHeight);
+    });
+
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: "false"
+    });
+  </script>
+
+  <script>
+    var range = 200;
+    $('#header-backdrop').css({ 'opacity': 0});
+    $(window).on('scroll', function () {
+      var scrollTop = $(this).scrollTop(),
+          height = $('#header-backdrop').outerHeight(),
+          offset = height / 2,
+          calc = 1 - (scrollTop - offset + range) / range;
+      $('#header-backdrop').css({ 'opacity': calc });
+
+      if (calc <= '-0.4') {
+        $('#header-backdrop').css({ 'opacity': 0.4 });
+      } else if (calc >= '0') {
+        $('#header-backdrop').css({ 'opacity': 0 });
+      } else {
+        $('#header-backdrop').css({ 'opacity': -1 * calc });
+      }
+    });
   </script>
 
 </body>
