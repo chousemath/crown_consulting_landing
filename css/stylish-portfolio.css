@@ -144,6 +144,15 @@ body {
   width: 100px;
 }
 
+.docandme-logo-1 {
+  height: 70px;
+}
+
+.docandme-logo-container {
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
 .pricing-label {
   text-align: left; margin-top: 75px;
 }
@@ -577,6 +586,16 @@ hr.small {
 .hospital-name {
   text-align: left;
   margin: 45px 0;
+}
+
+.powered-by-text {
+  text-align: right;
+  margin: 45px 0;
+}
+
+.powered-by-text-small {
+  text-align: center;
+  margin-bottom: -65px;
 }
 
 .overlay-subtext {
