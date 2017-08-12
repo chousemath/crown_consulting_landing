@@ -23,6 +23,14 @@
   <![endif]-->
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+  <!-- Import jQuery UI -->
+  <link href="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet">
+  <link href="vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css" rel="stylesheet">
+  <link href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" rel="stylesheet">
+  <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <!-- Import jQuery Timepicker -->
+  <link href="vendor/jquery-timepicker/jquery.timepicker.css" rel="stylesheet">
+  <script src="vendor/jquery-timepicker/jquery.timepicker.min.js"></script>
 </head>
 
 <body>
@@ -262,7 +270,7 @@
                 <ul class="nav nav-tabs" id="myTab">
                   <div class="liner"></div>
                   <li class="active">
-                    <a href="#home" data-toggle="tab" title="Ophthalmology">
+                    <a href="#ophthalmology" data-toggle="tab" title="Ophthalmology">
                       <span class="round-tabs one">
                         <img src="img/icon_eye.png" class="hospital-icon-styling"/>
                       </span>
@@ -307,7 +315,7 @@
                 </ul>
               </div>
               <div class="tab-content">
-                <div class="tab-pane fade in active" id="home">
+                <div class="tab-pane fade in active" id="ophthalmology">
                   <div class="row">
                     <div class="col-xs-12 col-sm-3">
                       <div class="flex-container pricing-container">
@@ -498,7 +506,72 @@
                   <div class="embed-responsive embed-responsive-16by9 video-spacing">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/VyNOf-DxlYo" frameborder="0" allowfullscreen></iframe>
                   </div>
+
+                  <!-- Reservation form for Seoul Shinsegae -->
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h1 class="customfont section-title">MAKE A RESERVATION</h1>
+                      <div style="height: 4px; width: 100%; margin-bottom: 50px;">
+                        <div class="blue-divider"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <form>
+                            <div class="flex-container">
+                              <div class="first-name-container">
+                                <div class="form-group signup-input-label">
+                                  <label for="exampleInputEmail1">First name</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                              </div>
+                              <div class="last-name-container">
+                                <div class="form-group signup-input-label">
+                                  <label for="exampleInputEmail1">Last name</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-container">
+                              <div class="first-name-container">
+                                <div class="form-group signup-input-label">
+                                  <label for="exampleInputEmail1">Pick a day</label>
+                                  <input type="text" class="form-control" id="pickDay" aria-describedby="pickDay">
+                                </div>
+                              </div>
+                              <div class="last-name-container">
+                                <div class="form-group signup-input-label">
+                                  <label for="exampleInputEmail1">Pick a time</label>
+                                  <input type="email" class="form-control" id="pickTime" aria-describedby="pickTime">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group signup-input-label">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group signup-input-label">
+                              <label for="exampleInputEmail1">Phone number</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group signup-input-label">
+                              <label for="inputPassword">Comments</label>
+                              <textarea class="form-control" style="min-height: 250px;" id="exampleTextarea" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn docandme-blue-background white-font signup-button">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <script>
+                  $( function() {
+                    $( "#pickDay" ).datepicker();
+                    $('#pickTime').timepicker({ 'scrollDefault': 'now' });
+                  } );
+                </script>
+
                 <div class="tab-pane fade" id="profile">
                   <h3 class="head text-center">Create a Bootsnipp<sup>™</sup> Profile</h3>
                   <p class="narrow text-center">
@@ -548,9 +621,6 @@
             </div>
           </div>
         </div>
-         <script>
-           $(function(){$('a[title]').tooltip();});
-         </script>
         </div>
         <div class="col-lg-1"></div>
       </div>
@@ -759,7 +829,7 @@
     </div>
   </section>
 
-  <div style="width: 100%; height: 70px;"></div>
+  <div class="page-spacer"></div>
 
   <script async src="js/docandme-iframe.js"></script>
 
@@ -768,6 +838,8 @@
 
   <!-- Custom Theme JavaScript -->
   <script>
+  // controls the icon tabs for hospital pages
+  $(function(){$('a[title]').tooltip();});
   // Closes the sidebar menu
   $("#menu-close").click(function(e) {
       e.preventDefault();
