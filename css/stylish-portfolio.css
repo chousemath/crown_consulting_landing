@@ -141,7 +141,7 @@ body {
 }
 
 .hospital-logo-image {
-  width: 75px;
+  width: 100px;
 }
 
 .pricing-label {
@@ -150,7 +150,7 @@ body {
 
 .hospital-logo-container {
   flex-grow: 1;
-  padding-top: 26px;
+  padding-top: 30px;
 }
 
 .hospital-name-container {
@@ -169,7 +169,13 @@ body {
 
 .doctor-name {
   font-size: 25px;
+  width: 90%;
   border-bottom: 4px solid #50BBC2;
+}
+
+.doctor-credentials {
+  font-size: 16px;
+  width: 90%;
 }
 
 .pricing-left-container {
@@ -426,8 +432,8 @@ hr.small {
 }
 
 .hospital-icon-styling {
-  width: 55px;
-  padding-bottom: 10px;
+  width: 40px;
+  padding-bottom: 7px;
 }
 
 .overlay-text {
@@ -437,6 +443,16 @@ hr.small {
   position:absolute;
   text-align:center;
   top: 35%;
+  width: 100%
+}
+
+.overlay-text-low {
+  color: white;
+  font-size: 3em;
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 55%;
   width: 100%
 }
 
@@ -470,6 +486,13 @@ hr.small {
   border-left-color: #ffffff;
 }
 
+.main-slide-container-small {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+}
+
 .super-slide-container-2 {
   width: 80%;
   margin: 0 auto;
@@ -488,6 +511,14 @@ hr.small {
   border-style: solid;
   border-width: 25px;
   border-right-color: #ff0000;
+}
+
+.super-slide-container-3-small {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 70%;
+  padding: 0 20px;
 }
 
 .super-slide-container-4 {
@@ -523,7 +554,7 @@ hr.small {
 }
 
 .main-slide-description-2 {
-  font-size: 25px;
+  font-size: 28px;
   line-height: 130%;
   font-weight: lighter;
 }
@@ -546,6 +577,11 @@ hr.small {
 .overlay-subtext {
   color: white;
   font-size: 25px;
+}
+
+.overlay-subtext-small {
+  color: white;
+  font-size: 22px;
 }
 
 .navbar-nav li a {
@@ -594,6 +630,16 @@ hr.small {
 
 .resize-input-box {
   height: 70px;
+}
+
+.blue-divider-container {
+  height: 4px;
+  width: 100%;
+}
+
+.section-title {
+  text-align: left;
+  color: white;
 }
 
 .blue-divider {
@@ -772,9 +818,9 @@ p.narrow{
 }
 
 span.round-tabs{
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     display: inline-block;
     border-radius: 100px;
     background: #808080;
@@ -887,7 +933,7 @@ li.active span.round-tabs.five{
     margin: 0 auto;
     bottom: 0px;
     border: 5px solid transparent;
-    border-bottom-color: #ddd;
+    border-bottom-color: transparent;
     transition:0.1s ease-in-out;
 
 }
@@ -903,8 +949,8 @@ li.active span.round-tabs.five{
 
 }
 .nav-tabs > li a{
-   width: 62px;
-   height: 70px;
+   width: 55px;
+   height: 55px;
    margin: 20px auto;
    border-radius: 100%;
    padding: 0;
