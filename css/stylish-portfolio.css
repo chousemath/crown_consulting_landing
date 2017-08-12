@@ -38,6 +38,10 @@ body {
   font-size: 24px;
 }
 
+.doctor-photo-center {
+  justify-content: center !important;
+}
+
 .hospital-image-container {
   position: relative;
   width: 100%;
@@ -161,7 +165,6 @@ body {
 .doctor-description-container {
   flex-grow: 8;
   text-align: left;
-  padding-left: 45px;
 }
 
 .doctor-name {
@@ -520,7 +523,7 @@ hr.small {
 }
 
 .main-slide-description-2 {
-  font-size: 28px;
+  font-size: 25px;
   line-height: 130%;
   font-weight: lighter;
 }
@@ -533,7 +536,6 @@ hr.small {
 
 .main-slide-container-3 {
   width: 100%;
-  margin-top: 30px;
 }
 
 .hospital-name {
