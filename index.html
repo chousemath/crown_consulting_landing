@@ -35,9 +35,9 @@
 
 <body>
   <nav class="navbar navbar-default navbar-fixed-top" style="background-color: transparent;">
-    <div id="header-backdrop" style="width: 100%; height: 95px; position: absolute; top: 0; background-color: #50BBC2; z-index: -1;"></div>
+    <div id="header-backdrop" class="header-backdrop-styling"></div>
     <div style="width: 100%;">
-      <div class="container" style="width: 80%; border-color: transparent; border-style: solid; border-width: 4px; border-bottom-color: #50BBC2;">
+      <div class="container navbar-header-container">
         <div class="navbar-header">
           <a class="navbar-brand" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <img src="img/mkfk_logo.png" style="height: 50px;">
@@ -45,10 +45,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" style="color: white;">ABOUT US</a></li>
-            <li><a href="#hospitals" style="color: white;">HOSPITALS</a></li>
-            <li><a href="#signup" style="color: white;">SIGN UP</a></li>
-            <li><a href="#contact" style="color: white;">CONTACT US</a></li>
+            <li><a href="#about" class="white-font">ABOUT US</a></li>
+            <li><a href="#hospitals" class="white-font">HOSPITALS</a></li>
+            <li><a href="#signup" class="white-font">SIGN UP</a></li>
+            <li><a href="#contact" class="white-font">CONTACT US</a></li>
           </ul>
         </div>
         <div class="nav-bar-border-spacer hidden-md hidden-lg"></div>
@@ -80,7 +80,7 @@
   </div>
 
   <div id="mycarousel" class="carousel slide" data-ride="carousel">
-   <ol class="carousel-indicators" style="margin-bottom: 80px;">
+   <ol class="carousel-indicators carousel-buttons-spacer">
       <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
       <li data-target="#mycarousel" data-slide-to="1"></li>
       <li data-target="#mycarousel" data-slide-to="2"></li>
@@ -92,12 +92,16 @@
          <div class="super-slide-container"></div>
          <div class="overlay-text">
            <div class="hidden-xs hidden-sm main-slide-container">
-             <div class="customfont" style="width: 100%;"><b>미주한인</b>의료지원재단</div>
-             <div class="hidden-xs hidden-sm" style="width: 100%; line-height: 55%;"><span class="overlay-subtext customfont">Medical Assistance Foundation for Korean Americans</span></div>
+             <div class="customfont full-width"><b>미주한인</b>의료지원재단</div>
+             <div class="hidden-xs hidden-sm overlay-subtext-small-container"><span class="overlay-subtext customfont">Medical Assistance Foundation for Korean Americans</span></div>
            </div>
            <div class="hidden-md hidden-lg main-slide-container-small">
-             <div class="customfont" style="width: 100%;"><b>미주한인</b>의료지원재단</div>
-             <div style="width: 100%; line-height: 55%;"><span class="overlay-subtext-small customfont">Medical Assistance Foundation for Korean Americans</span></div>
+             <div class="customfont full-width"><b>미주한인</b>의료지원재단</div>
+             <div class="overlay-subtext-small-container">
+               <span class="overlay-subtext-small customfont">
+                 Medical Assistance Foundation for Korean Americans
+               </span>
+             </div>
            </div>
          </div>
       </div>
@@ -108,8 +112,8 @@
           <div class="super-slide-container-2">
             <div class="main-slide-container-2">
               <span class="white-font">
-                <span class="customfont" style="font-size: 35px;"><b>미주한인</b>의료지원재단<br/></span>
-                <span class="customfont" style="font-size: 20px; font-weight: lighter;">Medical Assistance Foundation for Korean-Americans</span>
+                <span class="customfont name-tag"><b>미주한인</b>의료지원재단<br/></span>
+                <span class="customfont sub-name-tag">Medical Assistance Foundation for Korean-Americans</span>
               </span>
             </div>
           </div>
@@ -154,8 +158,8 @@
           <div class="super-slide-container-5">
             <div class="main-slide-container-2">
               <span class="white-font">
-                <span class="customfont" style="font-size: 35px;"><b>미주한인</b>의료지원재단<br/></span>
-                <span class="customfont" style="font-size: 20px; font-weight: lighter;">Medical Assistance Foundation for Korean-Americans</span>
+                <span class="customfont name-tag"><b>미주한인</b>의료지원재단<br/></span>
+                <span class="customfont sub-name-tag">Medical Assistance Foundation for Korean-Americans</span>
               </span>
             </div>
           </div>
@@ -163,8 +167,8 @@
 
         <div class="hidden-xs hidden-sm overlay-text-low">
           <div class="super-slide-container-4">
-            <div style="width: 100%; margin-top: 30px;">
-              <span class="white-font customfont" style="font-size: 25px; line-height: 30%; font-weight: lighter;">
+            <div class="mafk-description-container">
+              <span class="white-font customfont mafk-description-text">
                 MAFK는 우리 동포들의 건강증진과 의료이용을 돕기 위해 <br/>
                 설립된 공익목적의 비영리재단입니다.
               </span>
@@ -193,8 +197,8 @@
           <div class="super-slide-container-5">
             <div class="main-slide-container-2">
               <span class="white-font">
-                <span class="customfont" style="font-size: 35px;"><b>미주한인</b>의료지원재단<br/></span>
-                <span class="customfont" style="font-size: 20px; font-weight: lighter;">Medical Assistance Foundation for Korean-Americans</span>
+                <span class="customfont name-tag"><b>미주한인</b>의료지원재단<br/></span>
+                <span class="customfont sub-name-tag">Medical Assistance Foundation for Korean-Americans</span>
               </span>
             </div>
           </div>
@@ -232,8 +236,8 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10 text-center">
-          <h1 style="text-align: left;">WHO WE ARE</h1>
-          <div style="height: 4px; width: 100%;">
+          <p class="section-title-black">WHO WE ARE</p>
+          <div class="blue-divider-container">
             <div class="blue-divider"></div>
           </div>
           <p class="lead description-text customfont">
@@ -261,7 +265,7 @@
         <div class="col-lg-1"></div>
         <div class="col-lg-10 text-center">
           <p class="section-title">PARTNER HOSPITALS &amp; CLINICS</p>
-          <div style="height: 4px; width: 100%;">
+          <div class="blue-divider-container">
             <div class="blue-divider"></div>
           </div>
           <div class="bord-container">
@@ -511,7 +515,7 @@
                   <div class="row">
                     <div class="col-lg-12 text-center">
                       <p class="customfont section-title">MAKE A RESERVATION</p>
-                      <div style="height: 4px; width: 100%; margin-bottom: 50px;">
+                      <div class="blue-divider-container-reservation">
                         <div class="blue-divider"></div>
                       </div>
                       <div class="row">
