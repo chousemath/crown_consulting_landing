@@ -35,7 +35,7 @@ body {
 
 .foundation-explanation-text {
   margin-top: 12px;
-  font-size: 24px;
+  font-size: 25.5px;
 }
 
 .doctor-photo-center {
@@ -91,7 +91,7 @@ body {
   left: 0;
   z-index: 9;
   color: white;
-  font-size: 16px;
+  font-size: 14.5px;
 }
 
 .footer-icon {
@@ -116,7 +116,7 @@ body {
 }
 
 .signup-button {
-  font-size: 23px;
+  font-size: 25.5px;
   font-weight: bold;
   width: 100%;
 }
@@ -137,7 +137,7 @@ body {
   align-items: center;
   padding: 23px 20px;
   background-color: #666666;
-  font-size: 23px;
+  font-size: 1.3em;
 }
 
 .hospital-logo-image {
@@ -177,13 +177,13 @@ body {
 }
 
 .doctor-name {
-  font-size: 25px;
+  font-size: 25.5px;
   width: 90%;
   border-bottom: 4px solid #50BBC2;
 }
 
 .doctor-credentials {
-  font-size: 16px;
+  font-size: 1.3em;
   width: 90%;
 }
 
@@ -217,7 +217,7 @@ body {
 .video-title {
   text-align: center;
   width: 100%;
-  font-size: 23px;
+  font-size: 25.5px;
   color: white;
   margin: 100px 0 35px 0;
 }
@@ -281,7 +281,7 @@ body {
 .description-text {
   margin-top: 35px;
   text-align: left;
-  font-size: 23px;
+  font-size: 1.3em;
   line-height: 200%;
 }
 
@@ -370,7 +370,7 @@ hr.small {
 
 .sidebar-nav > .sidebar-brand {
     height: 55px;
-    font-size: 18px;
+    font-size: 14.5px;
     line-height: 55px;
 }
 
@@ -504,7 +504,7 @@ hr.small {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-size: 30px;
+  font-size: 25.5px;
 }
 
 .super-slide-container-2 {
@@ -568,7 +568,7 @@ hr.small {
 }
 
 .main-slide-description-2 {
-  font-size: 28px;
+  font-size: 25.5px;
   line-height: 130%;
   font-weight: lighter;
 }
@@ -600,12 +600,12 @@ hr.small {
 
 .overlay-subtext {
   color: white;
-  font-size: 25px;
+  font-size: 25.5px;
 }
 
 .overlay-subtext-small {
   color: white;
-  font-size: 22px;
+  font-size: 0.7em;
 }
 
 .navbar-nav li a {
@@ -631,11 +631,11 @@ hr.small {
 /*CONTACT FORM*/
 
 .contact-header {
-  font-size: 33px;
+  font-size: 25.5px;
 }
 
 .contact-text {
-  font-size: 18px;
+  font-size: 14.5px;
 }
 
 .contact-thin {
@@ -664,6 +664,7 @@ hr.small {
 .section-title {
   text-align: left;
   color: white;
+  font-size: 25.5px;
 }
 
 .blue-divider {
@@ -713,7 +714,7 @@ hr.small {
 }
 
 .quote-text {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 /* Portfolio */
@@ -852,7 +853,7 @@ span.round-tabs{
     position: absolute;
     left: 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 25.5px;
 }
 
 span.round-tabs.one{
@@ -991,7 +992,7 @@ li.active span.round-tabs.five{
 
 .tab-content .head{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 25px;
+    font-size: 25.5px;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
@@ -1017,7 +1018,7 @@ width: 90%;
 height:auto !important;
 }
     span.round-tabs {
-        font-size:16px;
+        font-size:14px;
 width: 50px;
 height: 50px;
 line-height: 50px;
