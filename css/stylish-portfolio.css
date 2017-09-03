@@ -1202,3 +1202,33 @@ left: 35%;
 .tab-spacing {
   margin-top: -50px;
 }
+
+.textarea-minimum {
+  min-height: 250px;
+}
+
+.powered-by-container {
+  padding-right: 0;
+}
+
+.logo-container {
+  padding-left: 0;
+}
+
+.logo-img-container {
+  text-align: left;
+}
+
+.logo-img-container-small {
+  text-align: center;
+}
+
+.contact-container-inner {
+  text-align: left;
+  padding-left: 35px;
+}
+
+.logo-constraints {
+  height: 65px;
+  margin-bottom: 25px;
+}
