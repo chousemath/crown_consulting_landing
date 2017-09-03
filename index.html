@@ -29,18 +29,16 @@
   <link href="vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" rel="stylesheet">
   <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
   <!-- Import jQuery Timepicker -->
-  <link href="vendor/jquery-timepicker/jquery.timepicker.css" rel="stylesheet">
-  <script src="vendor/jquery-timepicker/jquery.timepicker.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: transparent;">
+  <nav class="navbar navbar-default navbar-fixed-top transparent-background">
     <div id="header-backdrop" class="header-backdrop-styling"></div>
     <div style="width: 100%;">
       <div class="container navbar-header-container">
         <div class="navbar-header">
           <a class="navbar-brand" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <img src="img/mkfk_logo.png" style="height: 50px;">
+            <img src="img/mkfk_logo.png" class="logo-sizing">
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -180,22 +178,6 @@
         <div class="hidden-xs hidden-sm overlay-text-low">
           <div class="super-slide-container-3">
             <div class="mafk-description-container">
-
-              <!-- <div class="row remove-padding">
-                <div class="col-md-2">
-                  <div class="main-icon-container" style="background-color: red;">
-                    <div class="main-icon-2 main-icon-styling"></div>
-                  </div>
-                </div>
-
-                <div class="col-md-9" style="background-color: purple;">
-                  <div class="light-blue-divider"></div>
-                  <div class="white-font mafk-description-text customfont main-description-padding">
-
-                  </div>
-                </div>
-              </div> -->
-
               <div class="row remove-padding">
                 <div class="col-md-10 remove-padding">
                   <div class="light-blue-divider-right"></div>
@@ -210,11 +192,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <span class="white-font customfont mafk-description-text">
-                MAFK는 우리 동포들의 건강증진과 의료이용을 돕기 위해 <br/>
-                설립된 공익목적의 비영리재단입니다.
-              </span> -->
             </div>
           </div>
         </div>
@@ -222,12 +199,10 @@
         <div class="hidden-md hidden-lg overlay-text">
           <div class="super-slide-container-3-small">
             <div class="main-slide-container-3">
-
               <div class="white-font main-slide-description-2 customfont">
                 MAFK는 우리 동포들의 건강증진과 의료이용을 돕기 위해 <br/>
                 설립된 공익목적의 비영리재단입니다.
               </div>
-
             </div>
           </div>
         </div>
@@ -377,7 +352,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-content" style="margin-top: -50px;">
+              <div class="tab-content tab-spacing">
                 <div class="tab-pane fade in active" id="ophthalmology">
                   <div class="row">
                     <div class="col-xs-12 col-sm-3">
@@ -930,14 +905,28 @@
   <script>
     // controls the icon tabs for hospital pages
     $(function(){$('a[title]').tooltip();});
+
+    function loadStyleSheet(src){
+      if (document.createStyleSheet) document.createStyleSheet(src);
+      else {
+          var stylesheet = document.createElement('link');
+          stylesheet.href = src;
+          stylesheet.rel = 'stylesheet';
+          stylesheet.type = 'text/css';
+          document.getElementsByTagName('head')[0].appendChild(stylesheet);
+      }
+    }
+    window.onload = function() {
+      // load non-critical stylesheets asynch
+      loadStyleSheet("vendor/jquery-timepicker/jquery.timepicker.css");
+    }
   </script>
 
   <script src="js/carousel-full-screen.js"></script>
-
   <script src="js/bootstrap-theme.js"></script>
   <script src="js/header-opacity.js"></script>
-  <script src="js/date-time-picker.js"></script>
-
+  <script defer src="vendor/jquery-timepicker/jquery.timepicker.min.js"></script>
+  <script defer src="js/date-time-picker.js"></script>
 </body>
 
 </html>

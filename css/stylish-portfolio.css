@@ -1190,3 +1190,15 @@ left: 35%;
     padding:12px 20px;
     }
 }
+
+.transparent-background {
+  background-color: transparent !important;
+}
+
+.logo-sizing {
+  height: 50px;
+}
+
+.tab-spacing {
+  margin-top: -50px;
+}
